@@ -7,7 +7,12 @@ body {
 }
 
 /*  ---- start exercise 1 ----  */
+
 .nav-items ul {
+  border: 2px solid rgb(173, 171, 171);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
   max-width: 700px;
   list-style: none;
   padding: 0;
@@ -17,7 +22,7 @@ body {
 .nav-items a:link,
 .nav-items a:visited {
   background-color: #4d7298;
-  border: 2px solid #4d7298;
+  border: 2px solid #85add5;
   border-radius: 10px;
   color: #fff;
   padding: 0.5em;
@@ -29,6 +34,9 @@ body {
 /*  ---- start exercise 2 ----  */
 
 .parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #4d7298;
   border-radius: 10px;
   width: 400px;
@@ -46,6 +54,8 @@ body {
 
 /*  ---- start exercise 3 ----  */
 .card-3 {
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid #4d7298;
   border-radius: 10px;
   height: 150px;
@@ -53,6 +63,9 @@ body {
   padding: 20px;
 }
 
+.child-3 {
+  align-self: flex-end;
+}
 /*  ---- end exercise 3 ----  */
 
 /*  ---- start exercise 4 ----  */
@@ -61,6 +74,7 @@ body {
 }
 
 .card-4 {
+  display: flex;
   border: 1px solid #4d7298;
   border-radius: 10px;
   width: 500px;
@@ -68,6 +82,9 @@ body {
 
 .card-text-wrapper {
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .card-img {
@@ -75,9 +92,11 @@ body {
 }
 
 .reserve-btn {
+  align-self: flex-end;
   background-color: #4d7298;
   color: #fff;
   padding: 10px;
+  margin-top: 20px;
   font-size: 16px;
   border-radius: 10px;
 }
@@ -85,10 +104,15 @@ body {
 
 /*  ---- start exercise 5 ----  */
 .tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   width: 800px;
 }
 
 .tags li {
+  flex: auto;
   padding: 6px;
   margin: 6px;
   background-color: rgb(111, 41, 97);
