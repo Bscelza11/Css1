@@ -12,7 +12,7 @@ body {
   border: 2px solid rgb(173, 171, 171);
   border-radius: 5px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   max-width: 700px;
   list-style: none;
   padding: 0;
@@ -55,7 +55,7 @@ body {
 /*  ---- start exercise 3 ----  */
 .card-3 {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   border: 1px solid #4d7298;
   border-radius: 10px;
   height: 150px;
@@ -64,7 +64,9 @@ body {
 }
 
 .child-3 {
-  align-self: flex-end;
+  display: flex;
+  flex-grow: 3;
+  align-items: flex-end;
 }
 /*  ---- end exercise 3 ----  */
 
@@ -81,10 +83,12 @@ body {
 }
 
 .card-text-wrapper {
-  padding: 20px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  padding: 20px;
+}
+.spots {
+  flex-grow: 1;
 }
 
 .card-img {
@@ -92,11 +96,9 @@ body {
 }
 
 .reserve-btn {
-  align-self: flex-end;
   background-color: #4d7298;
   color: #fff;
   padding: 10px;
-  margin-top: 20px;
   font-size: 16px;
   border-radius: 10px;
 }
@@ -104,15 +106,13 @@ body {
 
 /*  ---- start exercise 5 ----  */
 .tags {
+  width: 800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  width: 800px;
 }
-
 .tags li {
-  flex: auto;
+  list-style-type: none;
   padding: 6px;
   margin: 6px;
   background-color: rgb(111, 41, 97);
